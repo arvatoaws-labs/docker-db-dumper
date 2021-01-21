@@ -1,3 +1,4 @@
 FROM alpine
 
-RUN apk add aws-cli postgresql-client mysql-client
+RUN apk add aws-cli postgresql-client mysql-client bash
+ENTRYPOINT [ "/bin/bash" ]
